@@ -1,78 +1,94 @@
 # AI Course Generator
 
-AI Course Generator is a platform that allows users to easily create
-and generate educational courses using artificial intelligence. By simply entering course details like name, duration, number of chapters, and specifying if videos are included, Gemeni AI generates the entire course structure along with relevant YouTube videos for each chapter.
+AI Course Generator is a web app I built that lets anyone create complete educational courses using **artificial intelligence**. By entering simple details like course name, duration, number of chapters, and video preferences, the app automatically generates a full course structure and attaches relevant YouTube videos for each topic.
+
+---
 
 ## Features
 
-- **User Registration**: Users can register and create their own accounts.
+* **User Accounts** – Secure sign-up and sign-in system.
+* **AI-Powered Course Builder** – Instantly generates course outlines based on user input.
+* **YouTube Integration** – Pulls in matching YouTube videos for each chapter automatically.
+* **Image Uploads** – Stores all course images in Firebase.
+* **Modern UI** – Designed with **Shadcn UI** for a clean, responsive interface.
 
-- **Course Creation**: Users can create a course by providing a course name, duration, number of chapters, and the option to include videos.
-- **AI-Generated Courses**: The platform uses AI to generate a complete course structure based on user input.
-- **YouTube Video Integration**: The AI automatically attaches relevant YouTube videos to each chapter of the course.
-- **Image Storage**: Course-related images are stored in Firebase.
-- **Frontend Design**: The frontend is built using the Shadcn UI library to provide a modern and responsive interface.
+---
 
 ## Tech Stack
 
-- **Next.js**
+* **Next.js** – Frontend and server logic
+* **PostgreSQL** – Database
+* **Drizzle ORM** – For managing schema and queries
+* **Firebase** – Image and media storage
+* **Shadcn UI Library** – Modern UI components
 
-- **PostgreSQL**
-- **Firebase**
-- **Drizzle ORM**
-- **Shadcn UI Library**
+---
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/bhataasim1/ai-content-generator.git
+   git clone https://github.com/Meghanath1435/ai-course-generator.git
+   cd ai-course-generator
    ```
 
-2. Navigate to the project directory:
+2. **Install dependencies**
 
-   ```bash
-   cd ai-content-generator
-   ```
-
-3. Install dependencies:
    ```bash
    pnpm install
    ```
-4. Set up the environment variables:
-   Create a `.env` file in the root directory and add the following values:
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory and add:
+
    ```bash
-    NEXT_PUBLIC_HOST_URL="http://localhost:3000"
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="Your-key"
-    CLERK_SECRET_KEY="Your-key"
-    NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
-    NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
-    NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY="Your-key"
-    NEXT_PUBLIC_DRIZZLE_DATABASE_URL="Your-database-url"
-    NEXT_PUBLIC_FIREBASE_API_KEY="your-key"
-    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="your-auth-domain"
-    NEXT_PUBLIC_FIREBASE_PROJECT_ID="project-id"
-    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="your-storage-bucket"
-    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="your-sender-id"
-    NEXT_PUBLIC_FIREBASE_APP_ID="your-app-id"
-    NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID="your-measurement-id"
-    NEXT_PUBLIC_YOUTUBE_API_KEY="your-youtube-api-key"
+   NEXT_PUBLIC_HOST_URL="http://localhost:3000"
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your-key"
+   CLERK_SECRET_KEY="your-key"
+   NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY="your-key"
+   NEXT_PUBLIC_DRIZZLE_DATABASE_URL="your-database-url"
+   NEXT_PUBLIC_FIREBASE_API_KEY="your-key"
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="your-auth-domain"
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID="project-id"
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="your-storage-bucket"
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="your-sender-id"
+   NEXT_PUBLIC_FIREBASE_APP_ID="your-app-id"
+   NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID="your-measurement-id"
+   NEXT_PUBLIC_YOUTUBE_API_KEY="your-youtube-api-key"
    ```
-5. Run the development server:
-   `bash
+
+4. Run the development server**
+
+   ```bash
    npm run dev
-6. Visit`http://localhost:3000` to view the application.
+   ```
 
-## Open to Contributions
+   Then open [http://localhost:3000](http://localhost:3000).
 
-AI Course Generator is an open-source project and we welcome contributions from the community. If you would like to contribute to the project, please follow the steps below:
+---
 
-1. Fork the repository.
+## Future Improvements
 
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your fork.
-5. Create a pull request to the main repository.
+* Add AI-based quiz generation
+* Enable course sharing and export
+* Build an admin dashboard for analytics
 
-We look forward to your contributions!
+---
+
+## Contributing
+
+I welcome improvements or suggestions!
+
+1. Fork this repo
+2. Create a new branch (`feature/your-feature`)
+3. Commit and push your changes
+4. Open a pull request
+
+---
+
+**Created and maintained by [Meghanath Tattari](https://github.com/Meghanath1435)**
+
+---
+
+Would you like me to also make it sound more “portfolio-ready” (so it highlights your personal role, skills, and project purpose for recruiters)?
